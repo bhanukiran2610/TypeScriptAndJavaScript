@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Open JavaScript console by pressing F12 key</h3>
+        <script type="text/javascript">
+            var x = prompt("Enter a number between 0 and 10", "");
+            try {
+                if (x>10) {
+                    throw "Error1";
+                } else if (x < 0) {
+                    throw "Error2";
+                } else if (isNaN(x))//Not a number keyword
+                 {
+                    throw "Error3";
+                }
+            } catch (err) {
+                if (err == "Error1") {
+                    document.write("Error Occured...Entered value seems to be too high");
+                }
+                if (err == "Error2") {
+                    document.write("Error Occured...Entered value seems to be too Low");
+                }
+                if (err == "Error3") {
+                    document.write("Error Occured...Entered value is not a number");
+                }
+            }
+        </script>
+    </body>
+</html>

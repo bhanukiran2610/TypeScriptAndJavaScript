@@ -1,0 +1,27 @@
+# Project exclude paths
+/AbstractClasses/Circle.js
+/AbstractClasses/DriverArray.js
+/AbstractClasses/Rectangle.js
+/EmployeeFiles/Department.js
+/EmployeeFiles/Employee.js
+/EmployeeFiles/EmployeeMain.js
+/InheritanceCDExample/CD.js
+/InheritanceCDExample/Driver.js
+/InheritanceCDExample/InternationalCD.js
+/InheritanceCDExample/SpecialEditionCD.js
+/InheritanceFiles/Circle.js
+/InheritanceFiles/Driver.js
+/InheritanceFiles/Rectangle.js
+/InterfacesFiles/Coach.js
+/InterfacesFiles/CricketCoach.js
+/InterfacesFiles/Driver.js
+/InterfacesFiles/GolfCoach.js
+/LambdaFunction/ArrowFunction.js
+/LikeOperation/Driver.js
+/LikeOperation/LikeFunction.js
+/TypeScript Files/CustomerClass.js
+/TypeScript Files/EnhancedFor.js
+/TypeScript Files/GetterSetter.js
+/TypeScript Files/GrowableArrays.js
+/TypeScript Files/Reviews.js
+/TypeScript Files/SampleTypeScripts.js

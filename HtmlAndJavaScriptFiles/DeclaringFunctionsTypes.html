@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    </head>
+
+    <body>
+
+        <h3>(Open JavaScript console by pressing F12 key!)
+            Function definitions (also called Function declaration)</h3>
+       <script type="text/javascript">
+            // #1: Declare a named function 
+	function myNamedFunction(something) {
+        console.log(something)
+        document.write(something)
+	}
+	
+	// #2: Create an anonymous function through function expression
+	// and assign it to myFunction1 variable
+	var myFunction1 = function (something){
+        console.log(something);
+        document.write(something);
+	}
+	
+	// Inspect the owning object of the functions,
+	// the global object in this example since the
+	// functions are declared in the global scope
+	console.dir(this);
+	
+	var myVar = myNamedFunction;
+	
+	// #3: Create a function through Function constructor
+	var myFunction3 = new Function("x", "y", "return x+y");
+
+	// Invoke functions
+	myNamedFunction("Life is good!");
+	myFunction1("Hello!");
+	myVar("Goodbye!");
+    console.log(myFunction3(3,5));
+    document.write(myFunction3(10,20));
+	
+    
+        </script>
+    </body>
+</html>

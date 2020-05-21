@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>JavaSript Variables</title>
+</head>
+<body>
+	<h3>(Open JavaScript console by pressing F12 key!) Shows various built-in JavaScript object types</h3>
+	<script type="text/javascript">
+		// String primitive type
+		var my_var = "Hello World!"
+		document.write("Constructor of my_var = " + my_var.constructor + "<br/>")
+		// "typeof" returns string type
+		document.write("type of my_var = " + typeof my_var + "<br/>")
+		document.write("length of my_var = " + my_var.length + "<br/>")
+		document.write("Uppercase version of my_var = " + my_var.toUpperCase()+ "<br/><br/>")
+		console.dir(my_var);
+
+		// Number primitive type
+		my_var = 34
+		document.write("Constructor of my_var = " + my_var.constructor + "<br/>")
+		document.write("type of of my_var = " + typeof my_var + "<br/><br/>")
+		console.dir(my_var);
+
+		// Array object type
+		my_var = [ 3, 6, 7 ]
+		document.write("Constructor of my_var = " + my_var.constructor	+ "<br/>")
+		document.write("type of of my_var = " + typeof my_var + "<br/>")
+		console.dir(my_var);
+
+		document.write("(my_var instanceof Array) = " + (my_var instanceof Array) + "<br/>")
+		document.write("(my_var instanceof Object) = "+ (my_var instanceof Object) + "<br/><br/>")
+
+		// Boolean primitive type
+		my_var = true
+		document.write("Constructor of my_var = " + my_var.constructor + "<br/>")
+		document.write("type of of my_var = " + typeof my_var + "<br/><br/>")
+		console.dir(my_var);
+
+		// Function type
+		my_var = function MyFunction() {
+		}
+		document.write("Constructor of my_var = " + my_var.constructor + "<br/>")
+		document.write("type of of my_var = " + typeof my_var + "<br/><br/>")
+		console.dir(my_var);
+
+		// Date object type
+		my_var = new Date();
+		document.write("Constructor of my_var = " + my_var.constructor + "<br/>")
+		document.write("type of of my_var = " + typeof my_var + "<br/><br/>")
+		console.dir(my_var);
+	</script>
+</body>
+</html>

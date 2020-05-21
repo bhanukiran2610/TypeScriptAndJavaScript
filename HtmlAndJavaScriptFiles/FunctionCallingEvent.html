@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script type="text/javascript">
+            // The alert message below gets executed when the page is loaded
+            alert("Hello Boston! This message gets displayed when a page is loaded.");
+        
+            // If alert("Hello world!!") below had not been written within a
+            // function, it would have been executed when page is loaded.
+            // Since it is within a function, it will be invoked only when
+            // myFunction1() function is invoked.
+            function myFunction1() {
+                console.log("Called within myFunction1")
+                document.write("Called within myFunction1");
+            }
+        
+            // This is another example custom function
+            function myFunction2() {
+                console.log("Called within myFunction2");
+                document.write("Called within myFunction2");
+                
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="Click me!" onclick="myFunction2()">
+        </form>
+    </body>
+</html>

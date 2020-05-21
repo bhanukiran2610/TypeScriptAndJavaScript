@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Prompt Usage</title>
+</head>
+<body>
+	<h3>Open JavaScript console by pressing F12 key</h3>
+	<script type="text/javascript">
+		var x = prompt("Enter a number between 0 and 10", "");
+		try {
+			if (x>10) {
+				throw "Error1";
+			} else if (x < 0) {
+				throw "Error2";
+            } else if (isNaN(x))//Not a number keyword
+             {
+				throw "Error3";
+			}
+		} catch (err) {
+			if (err == "Error1") {
+				document.write("Error Occured...Entered value seems to be too high");
+			}
+			if (err == "Error2") {
+				document.write("Error Occured...Entered value seems to be too Low");
+			}
+			if (err == "Error3") {
+				document.write("Error Occured...Entered value is not a number");
+			}
+		}
+	</script>
+</body>
+</html>

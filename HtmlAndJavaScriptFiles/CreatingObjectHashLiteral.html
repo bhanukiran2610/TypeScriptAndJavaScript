@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> creating a JavaScript object as a Hash Literal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>(Open JavaScript Console by pressing F12!)
+        Example of creating a JavaScript object as a Hash Literal</h3>
+        <script type="text/javascript">
+        
+            // Create hash literal JavaScript object and assign it
+            // to personObj variable.
+            var personObj = {
+                firstname : "Bhanu Kiran",
+                lastname : "Chinninnigari",
+                age : 22,
+                method1 : myMethod,  // myMethod function is defined at the bottom
+                tellYourage : function() {
+                    console.log("The age is " + this.age);
+                },
+                tellSomething : function(something) {
+                    console.log(something);
+                }
+            }
+            
+            personObj.hobby = "Golf";
+            personObj.salary=30000
+            
+        // Inspect the object
+        console.dir(personObj);
+        
+    
+            // Invoke methods of personObj object
+            personObj.method1("Bhanu");
+            personObj.tellYourage();
+            personObj.tellSomething("Life is really good!");
+            
+            // Declare a function
+            function myMethod(x) {
+                console.log("myMethod is invoked with " + x);//1
+            }
+        </script>
+    </body>
+</html>

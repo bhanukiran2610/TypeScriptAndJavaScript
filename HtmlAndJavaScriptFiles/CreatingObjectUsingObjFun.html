@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Create JavaScript object directly</title>
+</head>
+<body>
+	<h3>(Open JavaScript console by pressing F12 key!) 
+	Example of creating a JavaScript object from Object</h3>
+	<script type="text/javascript">
+	
+		// Declare a function
+		function myMethod(x, y) {
+			console.log("myMethod is invoked with " + x + " and " + y);
+		}
+
+		// Create a direct instance of JavaScript object and add properties
+		personObj = new Object(); // same as personObj = {}
+		personObj.firstname = "Bhanu";
+		personObj.lastname = "Kiran";
+		personObj.age = 50;
+		personObj.eyecolor = "blue";
+
+		document.write(personObj.firstname + " is " + personObj.age
+				+ " years old.")
+
+		// Add a method
+		personObj.method1 = myMethod;
+		personObj.method2 = myMethod();
+		 console.dir(personObj.method1);	// function object
+		 console.dir(personObj.method2);	// undefined
+
+		// Inspect the object
+		console.dir(personObj);
+
+		// Invoke method with various number of arguments
+		personObj.method1();
+		personObj.method1("Apple");
+		personObj.method1("Apple", "Orange")
+		personObj.method1(personObj.firstname, personObj.lastname)
+	</script>
+</body>
+</html>

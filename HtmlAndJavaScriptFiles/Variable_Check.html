@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <h3>(Open JavaScript console by pressing F12 key!) 
+ Global scope and local scope variables</h3>
+ <script type="text/javascript">
+ 
+ var my_name = "John"; // global scope variable
+ console.log(my_name);
+ 
+ your_name = "Brown"; // global scope variable
+ console.log(your_name);
+ 
+ his_name = "Java" // global scope variable
+ console.log(his_name);
+ 
+ function displayNames() {
+ // Without "var", her_name automatically becomes
+ // global variable
+ var her_name = "Amy"; // local scope variable
+somebody_name = "Somebody"; // global scope variable
+ console.log(his_name);
+ console.log(her_name);
+ console.log(somebody_name);
+ }
+ 
+ // Note that "somebody_name" variable in the "displayNamesh function
+ // as "not been defined until displayNames() function gets invoked
+ //console.log(somebody_name); // Uncaught ReferenceError
+ 
+ displayNames()
+ console.log("Global Variable")
+ //console.log(her_name); // Cannot access it - Uncaught ReferenceError
+ console.log(somebody_name); // OK since somebody_name is global scope variable
+ 
+ </script>
+</body>
+</html>
